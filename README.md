@@ -132,8 +132,8 @@ plt.title('Total Bill by Day') plt.show()
 
 ### 3-1 ) 데이터 구축
 
-####
-
-![데이터 예시](raw_data.jpg)
+#### raw 데이터
+기본 데이터를 pykrx라이브러리를 이용해서 불러옴
+![raw 데이터](raw_data.png)
 
 
