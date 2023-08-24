@@ -26,7 +26,7 @@
 사용방법 : 데이터 조작 및 분석을 위한 라이브러리
 
 ### 2-3 ) tdqm
-설치 :  ```  !pip install tqdm ```<br>
+설치 :  ``` !pip install tqdm ```<br>
 버전 : 4.64.1
 사용방법 : 진행 상황을 표시하는 라이브러리
 
@@ -49,12 +49,12 @@
 사용방법 : 다양한 기술적 지표를 계산하여 주가 데이터와 관련된 정보를 얻을 수 있는 라이브러리
 
 ### 2-8 ) matplotlib
-설치: ``` ! pip install matplotlib ``` <br>
+설치: ``` !pip install matplotlib ``` <br>
 버전 : 3.6.2
 사용방법 : 데이터 시각화를 위한 라이브러리
 
 ### 2-9 ) seaborn 
-설치: ``` ! pip install seaborn ``` <br>
+설치: ``` !pip install seaborn ``` <br>
 버전 : 0.12.2
 사용방법 : Matplotlib을 기반으로 한 고급 데이터 시각화 라이브러리
 
