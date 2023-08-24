@@ -62,21 +62,30 @@
 
 ## 3. 코드 실행
 
-### 3-1 ) 데이터 구축
+### 3-1 ) EDA 
+
+### 3-2 ) 데이터 구축
 ! 실행하기 전에 라이브러리 import 필수
 #### 일별 raw 데이터
 - 기본 데이터를 pykrx라이브러리를 이용해서 구축
  - 정보를 가져올 코스피 종목 가져오기 전부 실행 후 실행 (kospi200 = result_df['Symbol']까지)
  - 실행시간 약 50분 소요 -> 데이터 파일 따로 구글 드라이브로 공유
-<img src="raw_data.png" width="800px" height="400px" title="px(픽셀) 크기 설정" alt="기본데이터"></img><br/>
+<img src="raw_data.png" width="800px" height="400px" title="기본데이터" alt="기본데이터"></img><br/>
 
 #### 일별 보조지표 추가 데이터<br>
 - 기본 데이터에 보조지표를 계산하여 추가
  - 보조지표 가져오기 함수 실행 후 일별 데이터 생성(보조지표 추가)를 실행
+ - 후에 day_data.csv로 저장까지 실행
+<img src="raw_data_index.png" width="800px" height="400px" title="일별 보조지표 데이터" alt="기본데이터"></img><br/>
 
-<img src="raw_data.png" width="800px" height="400px" title="px(픽셀) 크기 설정" alt="기본데이터"></img><br/>
 #### 주별 데이터
-일별 데이터를 기반으로 생성한 주별 데이터에 이동평균선을 계산하여 추가
+- 일별 데이터를 기반으로 생성한 주별 데이터를 일별로 쌓이도록 한 뒤 이동평균선을 계산하여 추가
+ - 함수로 만들어 WD(일별데이터)로 실행하면 결과값이 나옴
+ - 결과값 중 필요한 date, Open, High,	Low,	Close,	Trading,	code만 저장하고 weekly로 칼럼명 변경
+<img src="weekly_data.png" width="800px" height="400px" title="주별 데이터" alt="기본데이터"></img><br/>
 
 #### 월별 데이터
-일별 데이터를 기반으로 생성한 월별 데이터에 이동평균선을 계산하여 추가
+- 일별 데이터를 기반으로 생성한 월별 데이터를 일별로 쌓이도록 한 뒤 이동평균선을 계산하여 추가
+ - 함수로 만들어 MD(일별데이터)로 실행하면 결과값이 나옴
+ - 결과값 중 필요한 date, Open, High,	Low,	Close,	Trading,	code만 저장하고 weekly로 칼럼명 변경
+<img src="monthly_data.png" width="800px" height="400px" title="월별 데이터" alt="기본데이터"></img><br/>
