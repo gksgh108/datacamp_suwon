@@ -36,6 +36,9 @@
      - ta
      - matplotlib
      - seaborn
+     - tensorflow
+     - keras_tuner
+     - sklearn
   (기본적으로 설치되어있는 datetime과 warning을 제외하고 나머지는 설치할 수 있도록 코드를 짜놓음)
 
 ### 4. 실행방법
